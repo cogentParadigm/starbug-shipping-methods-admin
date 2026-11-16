@@ -1,0 +1,30 @@
+{
+  "name": "starbug/shipping-methods-admin",
+  "type": "starbug-module",
+  "description": "Starbug shipping methods administration module.",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Ali Gangji",
+      "homepage": "https://github.com/cogentParadigm"
+    }
+  ],
+  "extra": {
+    "namespace": "Starbug\\ShippingMethods\\Admin"
+  },
+  "require": {
+    "starbug/shipping-methods": "^0.9",
+    "starbug/menus": "^0.9",
+    "starbug/admin": "^0.9",
+    "starbug/display": "^0.9",
+    "starbug/db": "^0.12",
+    "starbug/dojo": "^1.1",
+    "starbug/routing": "^1.0",
+    "starbug/templates": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Starbug\\ShippingMethods\\Admin\\": "src/"
+    }
+  }
+}
