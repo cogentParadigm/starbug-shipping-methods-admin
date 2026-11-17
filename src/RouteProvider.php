@@ -20,6 +20,7 @@ class RouteProvider extends AdminRouteProvider {
     $methods["create"]->onPost(SaveShippingMethod::class);
     $methods["update"]->onPost(SaveShippingMethod::class);
     $methods["adminApi"]->setOption("collection", ShippingMethodsAdminCollection::class);
-    $methods["selectApi"]->setOption("collection", ShippingMethodsSelectCollection::class);
+    // the shipping-methods package registers its own route for the cart selection
+    $routes->getRoute("api")->removeRoute("/shipping-methods/select.{format:json}");
   }
 }

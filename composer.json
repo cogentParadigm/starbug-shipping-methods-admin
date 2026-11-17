@@ -19,7 +19,7 @@
     "starbug/dojo": "^1.1",
     "starbug/menus": "^0.9",
     "starbug/routing": "^1.0",
-    "starbug/shipping-methods": "^0.10",
+    "starbug/shipping-methods": "^0.11",
     "starbug/templates": "^1.0"
   },
   "autoload": {
