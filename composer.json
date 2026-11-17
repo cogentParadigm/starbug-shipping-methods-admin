@@ -13,13 +13,13 @@
     "namespace": "Starbug\\ShippingMethods\\Admin"
   },
   "require": {
-    "starbug/shipping-methods": "^0.9",
-    "starbug/menus": "^0.9",
     "starbug/admin": "^0.9",
-    "starbug/display": "^0.9",
     "starbug/db": "^0.12",
+    "starbug/display": "^0.9",
     "starbug/dojo": "^1.1",
+    "starbug/menus": "^0.9",
     "starbug/routing": "^1.0",
+    "starbug/shipping-methods": "^0.10",
     "starbug/templates": "^1.0"
   },
   "autoload": {

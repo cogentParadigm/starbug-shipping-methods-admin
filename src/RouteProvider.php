@@ -2,6 +2,7 @@
 namespace Starbug\ShippingMethods\Admin;
 
 use Starbug\Admin\RouteProvider as AdminRouteProvider;
+use Starbug\ShippingMethods\Admin\Operation\SaveShippingMethod;
 use Starbug\Routing\Route;
 
 class RouteProvider extends AdminRouteProvider {
@@ -16,6 +17,8 @@ class RouteProvider extends AdminRouteProvider {
     $this->addCrud($routes, "shipping_rates_product_options", [
       "form" => ShippingRatesProductOptionsForm::class
     ]);
+    $methods["create"]->onPost(SaveShippingMethod::class);
+    $methods["update"]->onPost(SaveShippingMethod::class);
     $methods["adminApi"]->setOption("collection", ShippingMethodsAdminCollection::class);
     $methods["selectApi"]->setOption("collection", ShippingMethodsSelectCollection::class);
   }
