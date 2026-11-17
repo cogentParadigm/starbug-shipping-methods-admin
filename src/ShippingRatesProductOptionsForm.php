@@ -35,7 +35,7 @@ class ShippingRatesProductOptionsForm extends FormDisplay {
       "data-dojo-type" => "starbug/form/Dependency",
       "data-dojo-props" => "key:'operator'"
     ]);
-    $this->add(["value", "input_type" => "textarea", "div" => "col-sm-4", "data-dojo-type" => "starbug/form/Dependent", "data-dojo-props" => "key:'operator', values:['is equal to', 'is not equal to']"]);
+    $this->add(["value", "input_type" => "textarea", "div" => "col-sm-4", "data-dojo-type" => "starbug/form/Dependent", "data-dojo-props" => "key:'operator', values:{'operator': ['is equal to', 'is not equal to']}", "data-depend" => "operator"]);
   }
   public function getOptionsTree($parent = 0, $prefix = "") {
     $options = $values = [""];
